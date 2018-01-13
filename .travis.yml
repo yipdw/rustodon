@@ -18,7 +18,7 @@ env:
 
 before_script:
   - rustup component add --toolchain nightly rustfmt-preview
-  - cargo install cargo-update
+  - which cargo-install-update || cargo install cargo-update
   - cargo install-update diesel_cli
 
 script:
